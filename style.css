@@ -67,6 +67,7 @@ header h2 {
 
 #navBar img {
   position: relative;
+  cursor: pointer;
 }
 
 header h2 {
