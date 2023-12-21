@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --title-ff: "Saira Condensed", sans-serif;
+
+  --title-color: #fff;
+  --navbar-color: ##e8e8e8;
+  --span-color: #e73539;
+}
+
+body,
+.container {
+  max-width: 43rem;
+}
+
+header,
+#logo,
+.title,
+.categories {
+  display: flex;
+}
+
+header {
+  flex-direction: column;
+}
+
+.background-header-image img {
+  position: absolute;
+  flex-shrink: 0;
+  z-index: -1;
+
+  width: 100%;
+  object-fit: cover;
+}
+
+#logo {
+  margin: 4.7rem;
+  width: 43rem;
+
+  justify-content: space-around;
+}
+
+#logo h1 {
+  color: #fff;
+
+  margin-left: 1rem;
+
+  font-family: var(--title-ff);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.title {
+  align-items: center;
+}
+
+#logo h1,
+header h2 {
+  color: var(--title-color);
+}
+
+#navBar img {
+  position: relative;
+}
+
+header h2 {
+  width: 30rem;
+  color: var(--title-color);
+  font-family: var(--title-ff);
+  font-size: 5.4rem;
+  font-style: normal;
+  line-height: 90%; /* 48.6px */
+  text-transform: uppercase;
+
+  margin: 0 auto;
+}
+
+header span {
+  color: var(--span-color);
+}
+
+.categories {
+  display: flex;
+
+  height: 10.7rem;
+  padding: 4rem 11.7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+
+  margin-left: 5rem;
+
+  background: var(--title-color);
+  box-shadow: 0px 4px 68px 0px rgba(231, 53, 57, 0.25);
+
+  margin-top: 1.8rem;
+}
+
+.categories h4 {
+  color: var(--span-color);
+  font-family: var(--title-ff);
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 110%; /* 17.6px */
+  text-transform: uppercase;
+}
+
+.categorie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Footer */
+
+img.fight {
+  position: absolute;
+  flex-shrink: 0;
+  z-index: -1;
+
+  width: 100%;
+  object-fit: cover;
+}
